@@ -1,0 +1,2 @@
+## design-pattern-example
+- デザインパターンのサンプルコード
