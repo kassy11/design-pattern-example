@@ -8,28 +8,31 @@ import java.util.ArrayList;
 // HTMLページ全体を抽象的に表現したクラス
 // 抽象的な製品
 public abstract class Page {
-    protected String title;
-    protected String author;
-    protected ArrayList content = new ArrayList();
-    public Page(String title, String author){
-        this.title = title;
-        this.author = author;
-    }
-    public void add(Item item){
-        content.add(item);
-    }
+  protected String title;
+  protected String author;
+  protected ArrayList content = new ArrayList();
 
-    // TemplateMethodパターンになってる
-    public void output(){
-        try {
-            String filename =  title + ".html";
-            Writer writer = new FileWriter(filename);
-            writer.write(this.makeHTML());
-            writer.close();
-            System.out.println(filename + "を作成しました");
-        }catch (IOException e){
-            e.printStackTrace();
-        }
+  public Page(String title, String author) {
+    this.title = title;
+    this.author = author;
+  }
+
+  public void add(Item item) {
+    content.add(item);
+  }
+
+  // TemplateMethodパターンになってる
+  public void output() {
+    try {
+      String filename = title + ".html";
+      Writer writer = new FileWriter(filename);
+      writer.write(this.makeHTML());
+      writer.close();
+      System.out.println(filename + "を作成しました");
+    } catch (IOException e) {
+      e.printStackTrace();
     }
-    public abstract String makeHTML();
+  }
+
+  public abstract String makeHTML();
 }

@@ -8,5 +8,4 @@
  */
 
 rootProject.name = 'java'
-include 'Adapter', 'Builder', 'FactoryMethod', 'Iterator', 'Singleton', 'TemplateMethod'
 
