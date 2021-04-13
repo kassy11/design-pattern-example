@@ -1,4 +1,5 @@
 package problem;
+
 // ConcreteIterator
 public class BookShelfIterator implements Iterator {
   private BookShelf bookShelf;
@@ -6,7 +7,9 @@ public class BookShelfIterator implements Iterator {
 
   public BookShelfIterator(BookShelf bookShelf) {
     this.bookShelf = bookShelf;
+    this.index = 0;
   }
+
   // Iteratorインタフェースを実装する
   public boolean hasNext() { // 次にnext()を読んで大丈夫か調べる
     if (index < bookShelf.getLength()) {

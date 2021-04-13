@@ -14,5 +14,11 @@ public class Main {
       Book book = (Book) it.next();
       System.out.println(book.getName());
     }
+
+    Iterator itLast = bookShelf.iteratorFromLast();
+    while (itLast.hasNext()) {
+      Book book = (Book) itLast.next();
+      System.out.println(book.getName());
+    }
   }
 }

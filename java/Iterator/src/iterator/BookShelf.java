@@ -22,7 +22,12 @@ public class BookShelf implements Aggregate {
   }
 
   // Aggregateインタフェースを実装する
+  // BookShelfのインスタンスを走査したいときにはこのメソッドを使う
   public Iterator iterator() {
     return new BookShelfIterator(this);
+  }
+
+  public Iterator iteratorFromLast() {
+    return new BookShelfIteratorFromLast(this);
   }
 }
