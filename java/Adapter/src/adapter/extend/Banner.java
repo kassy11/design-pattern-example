@@ -1,6 +1,6 @@
 package adapter.extend;
 
-// あらかじめ提供されているクラス
+// あらかじめ提供されているクラス(Adapt-ee)
 public class Banner {
   private String string;
 

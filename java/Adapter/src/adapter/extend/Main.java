@@ -6,7 +6,6 @@ public class Main {
     // Bannerクラスは隠されている
     Print p = new PrintBanner("Hello");
     p.printStrong();
-    ;
     p.printWeek();
   }
 }

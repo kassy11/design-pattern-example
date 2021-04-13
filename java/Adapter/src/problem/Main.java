@@ -14,5 +14,8 @@ public class Main {
     } catch (IOException e) {
       e.printStackTrace();
     }
+    System.out.println(f.getValue("year"));
+    System.out.println(f.getValue("month"));
+    System.out.println(f.getValue("day"));
   }
 }

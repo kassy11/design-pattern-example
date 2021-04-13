@@ -1,6 +1,6 @@
 package adapter.extend;
 
-// 実装したいメソッド
+// 実装したいメソッド（Target）
 public interface Print {
   public abstract void printWeek();
 

@@ -1,6 +1,6 @@
 package adapter.extend;
 
-// Bannerを継承してPrintインタフェースを実装する
+// Bannerを継承してPrintインタフェースを実装するクラス（Adapter）
 public class PrintBanner extends Banner implements Print {
   public PrintBanner(String string) {
     super(string);

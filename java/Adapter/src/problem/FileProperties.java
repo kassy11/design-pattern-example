@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
+// java.util.PropertiesをTargetとしてFileIOインタフェースを実装する、Adapterクラス
 public class FileProperties extends Properties implements FileIO {
   private FileOutputStream out = null;
 
