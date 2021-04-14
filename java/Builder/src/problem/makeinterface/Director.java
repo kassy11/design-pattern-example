@@ -1,9 +1,7 @@
 package problem.makeinterface;
 
-import builder.Builder;
-
 public class Director {
-  private builder.Builder builder;
+  private Builder builder;
 
   public Director(Builder builder) {
     this.builder = builder;

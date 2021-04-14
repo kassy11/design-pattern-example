@@ -9,7 +9,7 @@ public class HTMLBuilder extends Builder {
   public void makeTitle(String title) {
     filename = title + ".html";
     try {
-      writer = new PrintWriter(new FileWriter(filename));
+      writer = new PrintWriter(new File(filename), "UTF-8");
     } catch (IOException e) {
       e.printStackTrace();
     }

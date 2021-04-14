@@ -17,5 +17,5 @@ public abstract class AbstractDisplay {
       print();
     }
     close();
-  }
+  }x
 }
