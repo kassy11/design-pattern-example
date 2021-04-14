@@ -5,7 +5,7 @@ public class Main {
     System.out.println("Start");
     Singleton obj1 = Singleton.getInstance();
     Singleton obj2 = Singleton.getInstance();
-    System.out.println(obj1 == obj2);
+    System.out.println(obj1 == obj2); // assert true
     System.out.println("End");
   }
 }
