@@ -8,4 +8,4 @@
 - インスタンスが一つしかできないことを保証できる
 
 ### クラス図
-![](https://gyazo.com/bcf2393b0fa4f5f792c59b26cc7b3100)
+[![Image from Gyazo](https://i.gyazo.com/bcf2393b0fa4f5f792c59b26cc7b3100.png)](https://gyazo.com/bcf2393b0fa4f5f792c59b26cc7b3100)
