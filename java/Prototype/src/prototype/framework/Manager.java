@@ -12,6 +12,8 @@ public class Manager {
 
   public Product create(String protoname) {
     Product p = (Product) showcase.get(protoname);
+    // clone()は複製したクラスかそのサブクラスから呼び出せないので、他のクラスから呼び出すときは
+    // createClone()のようなラッパーメソッドをつくる
     return p.createClone();
   }
 }

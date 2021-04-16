@@ -2,6 +2,7 @@ package prototype;
 
 import prototype.framework.Product;
 
+// Productインターフェースを実装してさえいれば、そのインスタンスを複製できる
 public class MessageBox implements Product {
   private char decochar;
 
@@ -27,6 +28,7 @@ public class MessageBox implements Product {
   public Product createClone() {
     Product p = null;
     try {
+      // clone()はJavaの言語仕様で規定された、自分自身を複製するメソッド
       p = (Product) clone();
     } catch (CloneNotSupportedException e) {
       e.printStackTrace();
